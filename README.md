@@ -13,21 +13,23 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 
 
-# 🎥 Demo
-
-<img src="./demo.gif" width="300">
-
 # 📸 Screenshots
 
-The screenshots below are taken on a android emulator.
-
-| 1                                           | 2                                         |
+| Game Streaming                                           | Game Streaming                                         |
 | ------------------------------------------- | ----------------------------------------- |
-| <img src="./screenshots/1.png" width="300"> | <img src="screenshots/2.png" width="300"> |
+| <img src="./game_streaming/screenshots/home0.png.png" width="400"> | <img src="./game_streaming/screenshots/profile0.png" width="400"> |
 
-| 3                                         | 4                                         |
+| Jersey Kit                                         | Jersey Kit                                         |
 | ----------------------------------------- | ----------------------------------------- |
-| <img src="screenshots/3.png" width="300"> | <img src="screenshots/4.png" width="300"> |
+| <img src="./jerseykit_app/screenshots/home0.png" width="400"> | <img src="./jerseykit_app/screenshots/purchase0.png" width="400"> |
+
+| Travel Service                                           | Travel Service                                         |
+| ------------------------------------------- | ----------------------------------------- |
+| <img src="./travel_service/screenshots/home1.png" width="400"> | <img src="./travel_service/screenshots/detail1.png" width="400"> |
+
+| Forecast Club                                         | Forecast Club                                         |
+| ----------------------------------------- | ----------------------------------------- |
+| <img src="./forecast_club/screenshots/home0.png" width="400"> | <img src="./forecast_club/screenshots/home0.png" width="400"> |
 
 # ✨ Requirements
 

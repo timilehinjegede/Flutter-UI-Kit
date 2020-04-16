@@ -1,4 +1,4 @@
-# 😋 Flutter Game Streaming UI [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# 😋 Game Streaming UI [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 > **Disclaimer:** I am not in anyway in affiliate with the designer of the screens. I just love the UI and decided to do it in Flutter😽
 
@@ -11,19 +11,15 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 
 
-# 🎥 Demo
-
-<img src="./demo.gif" width="300">
-
 # 📸 Screenshots
 
-The screenshots below are taken on a iOS simulator.
+### The screenshots below are taken on a iOS simulator.
 
 | Home Screen                                           | Home Screen                                         |
 | ------------------------------------------- | ----------------------------------------- |
 | <img src="screenshots/home0.png" width="400"> | <img src="screenshots/home1.png" width="400"> |
 
-The screenshots below are taken on aa android emulator.
+### The screenshots below are taken on aa android emulator.
 
 | Profile Screen                                         | Profile Screen                                         |
 | ----------------------------------------- | ----------------------------------------- |

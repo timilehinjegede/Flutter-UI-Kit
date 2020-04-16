@@ -13,15 +13,11 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 
 
-# 🎥 Demo
-
-<img src="./demo.gif" width="300">
-
 # 📸 Screenshots
 
-The screenshots below are taken on a android emulator.
+### The screenshots below are taken on a iOS simulator.
 
-| 1                                           | 2                                         |
+| Home Screen                                           | Purchase Screen                                         |
 | ------------------------------------------- | ----------------------------------------- |
 | <img src="screenshots/home0.png" width="400"> | <img src="screenshots/purchase0.png" width="400"> |
 
