@@ -15,21 +15,14 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 
 # 📸 Screenshots
 
-| Game Streaming                                           | Game Streaming                                         |
-| ------------------------------------------- | ----------------------------------------- |
-| <img src="./game_streaming/screenshots/home0.png" width="400"> | <img src="./game_streaming/screenshots/profile0.png" width="400"> |
+| Game Streaming | Game Streaming | Jersey Kit | Jersey Kit  | Travel Service     |
+|    :---:     |     :---:      |     :---:     |     :--:     |     :--:     |
+| <img src="./game_streaming/screenshots/home0.png" width="500">   | <img src="./game_streaming/screenshots/profile0.png" width="500">     | <img src="./jerseykit_app/screenshots/home0.png" width="500">    | <img src="./jerseykit_app/screenshots/purchase0.png" width="500">       | <img src="./travel_service/screenshots/home1.png" width="500">     |
 
-| Jersey Kit                                         | Jersey Kit                                         |
-| ----------------------------------------- | ----------------------------------------- |
-| <img src="./jerseykit_app/screenshots/home0.png" width="400"> | <img src="./jerseykit_app/screenshots/purchase0.png" width="400"> |
+| Travel Service | Forecast Club | Forecast Club | Shopping App  | Shopping App     |
+|    :---:     |     :---:      |     :---:     |     :--:     |     :--:     |
+| <img src="./travel_service/screenshots/detail1.png" width="400">   | <img src="./forecast_club/screenshots/home0.png" width="400">     | <img src="./forecast_club/screenshots/home0.png" width="400">    | Coming Soon       | Coming Soon     |
 
-| Travel Service                                           | Travel Service                                         |
-| ------------------------------------------- | ----------------------------------------- |
-| <img src="./travel_service/screenshots/home1.png" width="400"> | <img src="./travel_service/screenshots/detail1.png" width="400"> |
-
-| Forecast Club                                         | Forecast Club                                         |
-| ----------------------------------------- | ----------------------------------------- |
-| <img src="./forecast_club/screenshots/home0.png" width="400"> | <img src="./forecast_club/screenshots/home0.png" width="400"> |
 
 # ✨ Requirements
 
