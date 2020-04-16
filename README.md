@@ -17,7 +17,7 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 
 | Game Streaming                                           | Game Streaming                                         |
 | ------------------------------------------- | ----------------------------------------- |
-| <img src="./game_streaming/screenshots/home0.png.png" width="400"> | <img src="./game_streaming/screenshots/profile0.png" width="400"> |
+| <img src="./game_streaming/screenshots/home0.png" width="400"> | <img src="./game_streaming/screenshots/profile0.png" width="400"> |
 
 | Jersey Kit                                         | Jersey Kit                                         |
 | ----------------------------------------- | ----------------------------------------- |
