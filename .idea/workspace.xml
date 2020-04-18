@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1248aac-7cdb-47f5-9d58-c5bfaa4f01a9" name="Default Changelist" comment="" />
+    <list default="true" id="b1248aac-7cdb-47f5-9d58-c5bfaa4f01a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/apple0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/apple1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/avatar.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/orange0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/pineapple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/lib/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FlutterUIKit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlutterUIKit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukandar_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_29" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,8 +44,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dukandar_app/images" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dukandar_app/images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -31,6 +66,17 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/dukandar_app/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter.main.dart" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

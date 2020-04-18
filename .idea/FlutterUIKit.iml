@@ -3,12 +3,25 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/dukandar_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dukandar_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dukandar_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/forecast_club/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/forecast_club/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/forecast_club/build" />
+      <excludeFolder url="file://$MODULE_DIR$/game_streaming/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/game_streaming/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/game_streaming/build" />
+      <excludeFolder url="file://$MODULE_DIR$/jerseykit_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/jerseykit_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/jerseykit_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/travel_service/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/travel_service/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/travel_service/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
