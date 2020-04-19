@@ -1,13 +1,16 @@
+import 'package:dukandarapp/detail.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // ===== BUILD BOTTOM NAVIGATION BAR =====
+      bottomNavigationBar: _buildBottomNav(),
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -201,21 +204,42 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
                       _buildFoodCard(
-                          'Orange',
-                          'Kinnow With Leaf & Stalk Per 500',
-                          '40.0',
-                          'images/orange0.png',
-                          true),
+                        'Orange',
+                        'Kinnow With Leaf & Stalk Per 500',
+                        '40.0',
+                        'images/orange0.png',
+                        true,
+                      ),
                       SizedBox(
                         width: 15,
                       ),
-                      _buildFoodCard('Apples', 'KalaKulu Apple Per 500GM',
-                          '75.0', 'images/apple0.png', false),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (BuildContext context) => DetailScreen(),
+                            ),
+                          );
+                        },
+                        child: _buildFoodCard(
+                          'Apples',
+                          'KalaKulu Apple Per 500GM',
+                          '75.0',
+                          'images/apple0.png',
+                          false,
+                        ),
+                      ),
                       SizedBox(
                         width: 15,
                       ),
-                      _buildFoodCard('Pineapples', 'Farm Fried Carrot per 500',
-                          '11.0', 'images/top3.png', false),
+                      _buildFoodCard(
+                        'Carrots',
+                        'Farm Fried Carrot per 500',
+                        '11.0',
+                        'images/top3.png',
+                        false,
+                      ),
                     ],
                   ),
                 ),
@@ -404,6 +428,80 @@ class HomeScreen extends StatelessWidget {
             ),
           )
         ],
+      ),
+    );
+  }
+
+  Widget _buildBottomNav() {
+    return Material(
+      elevation: 5,
+      borderRadius: BorderRadius.only(
+        topRight: Radius.circular(15),
+        topLeft: Radius.circular(15),
+      ),
+      child: Container(
+        height: 70,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(15),
+            topLeft: Radius.circular(15),
+          ),
+          color: Colors.white,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Container(
+              width: 85,
+              height: 30,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.grey[200],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.home,
+                    size: 20,
+                    color: Colors.black87,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Home',
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Icon(
+              Icons.shopping_basket,
+              size: 20,
+            ),
+            SizedBox(
+              width: 25,
+            ),
+            Icon(
+              Icons.loyalty,
+              size: 20,
+            ),
+            SizedBox(
+              width: 25,
+            ),
+            Icon(
+              Icons.menu,
+              size: 20,
+            )
+          ],
+        ),
       ),
     );
   }

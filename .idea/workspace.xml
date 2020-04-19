@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1248aac-7cdb-47f5-9d58-c5bfaa4f01a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/apple0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/apple1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/avatar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/orange0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/pineapple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/images/top3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FlutterUIKit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlutterUIKit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/detail0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/detail1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/home0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/home1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukandar_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukandar_app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/home.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586965830511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dukandar App UI">
+      <created>1587250212491</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587250212491</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +121,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Images" />
     <MESSAGE value="Game Streaming UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Streaming UI" />
+    <MESSAGE value="Dukandar App UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dukandar App UI" />
   </component>
 </project>

@@ -21,7 +21,7 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 
 | Travel Service | Forecast Club | Forecast Club | Shopping App  | Shopping App     |
 |    :---:     |     :---:      |     :---:     |     :--:     |     :--:     |
-| <img src="./travel_service/screenshots/detail1.png" width="400">   | <img src="./forecast_club/screenshots/home0.png" width="400">     | <img src="./forecast_club/screenshots/home0.png" width="400">    | Coming Soon       | Coming Soon     |
+| <img src="./travel_service/screenshots/detail1.png" width="400">   | <img src="./forecast_club/screenshots/home0.png" width="400">     | <img src="./forecast_club/screenshots/home0.png" width="400">    | <img src="./dukandar_app/screenshots/home0.png" width="400">       | <img src="./dukandar_app/screenshots/detail0.png" width="400">     |
 
 
 # ✨ Requirements
