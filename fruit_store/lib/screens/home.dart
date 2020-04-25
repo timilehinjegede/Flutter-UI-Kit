@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitstore/screens/fruit_detail.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -66,7 +67,18 @@ class HomeScreen extends StatelessWidget {
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: <Widget>[
-                            _buildFruitCard(),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        FruitDetailScreen(),
+                                  ),
+                                );
+                              },
+                              child: _buildFruitCard(),
+                            ),
                             SizedBox(width: 20),
                             _buildFruitCard(),
                             SizedBox(width: 20),
@@ -126,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                   Spacer(),
                   Text('E49,54'),
                   SizedBox(
-                    width: 2,
+                    width: 5,
                   ),
                   Icon(Icons.keyboard_arrow_down)
                 ],
