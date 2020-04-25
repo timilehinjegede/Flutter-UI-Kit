@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1248aac-7cdb-47f5-9d58-c5bfaa4f01a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/detail0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/detail1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/home0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dukandar_app/screenshots/home1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukandar_app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/detail.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukandar_app/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dukandar_app/lib/home.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +34,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dukandar_app/screenshots" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dukandar_app/images" />
     </key>
@@ -101,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587250212491</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dukandar App UI">
+      <created>1587290966095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587290966095</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
