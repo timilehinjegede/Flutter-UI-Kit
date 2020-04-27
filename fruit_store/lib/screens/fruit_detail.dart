@@ -16,7 +16,13 @@ class FruitDetailScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Icon(Icons.keyboard_arrow_left),
+                    GestureDetector(
+                      onTap: () => Navigator.pop(context),
+                      child: Icon(
+                        Icons.keyboard_arrow_left,
+                        size: 30,
+                      ),
+                    ),
                     Icon(Icons.more_vert)
                   ],
                 ),
@@ -30,7 +36,11 @@ class FruitDetailScreen extends StatelessWidget {
 
           // ========== BUILD FRUIT DETAILS HERE ==========
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.only(
+              left: 20,
+              right: 20,
+              top: 20,
+            ),
             height: MediaQuery.of(context).size.height * 0.55,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
@@ -42,19 +52,48 @@ class FruitDetailScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text('Durian Mon Tong'),
-                Text('King of Fruits'),
-                Text('1.5 - 2.5 kg'),
-                SizedBox(height: 30),
+                Text(
+                  'Durian Mon Tong',
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'King of Fruits',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  '1.5 - 2.5 kg',
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w500),
+                ),
+                SizedBox(height: 40),
                 Row(
                   children: <Widget>[
-                    Expanded(
-                      child: Container(),
+                    // ===== BUILD DOTS =====
+                    _buildDots(),
+                    Text(
+                      'E49,54',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                    Text('E49,54')
                   ],
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 40),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 20),
                   height: 80,
@@ -81,16 +120,33 @@ class FruitDetailScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text('Thailand Origin'),
-                          Text('Nutrition and variety'),
+                          Text(
+                            'Thailand Origin',
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            'Nutrition and variety',
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                       Spacer(),
-                      Icon(Icons.keyboard_arrow_down)
+                      Icon(
+                        Icons.keyboard_arrow_down,
+                        size: 30,
+                      )
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 40),
                 Row(
                   children: <Widget>[
                     Expanded(
@@ -103,19 +159,25 @@ class FruitDetailScreen extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text('Add to cart'),
+                            Text(
+                              'Add to cart',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
                             Container(
-                              height: 20,
-                              width: 20,
+                              height: 25,
+                              width: 25,
                               decoration: BoxDecoration(
                                   border: Border.all(
                                     color: Colors.black,
                                   ),
-                                  borderRadius: BorderRadius.circular(10)),
+                                  borderRadius: BorderRadius.circular(15)),
                               child: Center(
                                 child: Icon(
                                   Icons.add,
-                                  size: 16,
+                                  size: 18,
                                 ),
                               ),
                             )
@@ -137,12 +199,103 @@ class FruitDetailScreen extends StatelessWidget {
                       child: Icon(
                         Icons.favorite_border,
                         color: Colors.grey,
+                        size: 28,
                       ),
                     ),
                   ],
                 )
               ],
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDots() {
+    return Expanded(
+      child: Row(
+        children: <Widget>[
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          // BIG CIRCLE
+          Container(
+            height: 22,
+            width: 22,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(11),
+              color: Colors.yellow,
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Container(
+            height: 2.5,
+            width: 2.5,
+            color: Colors.grey,
           ),
         ],
       ),
