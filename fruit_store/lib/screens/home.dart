@@ -32,21 +32,63 @@ class HomeScreen extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Text('Exotic Fruits'),
-                                Text('More than 70 exotic fruits'),
+                                Text(
+                                  'Exotic Fruits',
+                                  style: TextStyle(
+                                    fontSize: 28,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 5,
+                                ),
+                                Text(
+                                  'More than 70 exotic fruits',
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey,
+                                  ),
+                                ),
                               ],
                             ),
 
                             // ========== BUILD ICON BUTTON ==========
                             Container(
-                              height: 50,
-                              width: 50,
+                              height: 40,
+                              width: 40,
                               decoration: BoxDecoration(
                                 color: Colors.orange[300],
                                 borderRadius: BorderRadius.circular(10),
                               ),
+                              padding: EdgeInsets.only(left: 10, right: 10),
                               child: Column(
-                                children: <Widget>[],
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  // ===== BUILD ICON BUTTON =====
+                                  Container(
+                                    height: 2,
+                                    width: 20,
+                                    color: Colors.black38,
+                                  ),
+                                  SizedBox(
+                                    height: 3,
+                                  ),
+                                  Container(
+                                    height: 2,
+                                    width: 15,
+                                    color: Colors.black38,
+                                  ),
+                                  SizedBox(
+                                    height: 3,
+                                  ),
+                                  Container(
+                                    height: 2,
+                                    width: 20,
+                                    color: Colors.black38,
+                                  ),
+                                ],
                               ),
                             )
                           ],
@@ -54,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                       ),
 
                       SizedBox(
-                        height: 20,
+                        height: 25,
                       ),
 
                       // ========== BUILD CARD SLIDE HERE ==========
@@ -77,38 +119,70 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 );
                               },
-                              child: _buildFruitCard(),
+                              child: _buildFruitCard('Durian Mon\nTong',
+                                  'E19.99', 'images/fruit1.png'),
                             ),
                             SizedBox(width: 20),
-                            _buildFruitCard(),
+                            _buildFruitCard('Hawaiian\nPapaya', 'E4.55',
+                                'images/fruit2.png'),
                             SizedBox(width: 20),
-                            _buildFruitCard(),
+                            _buildFruitCard('Durian Mon\nTong', 'E19.99',
+                                'images/fruit1.png'),
                           ],
                         ),
                       ),
 
+                      SizedBox(
+                        height: 20,
+                      ),
+
                       // ========== BUILD MARKETS HERE ==========
-                      Text('Markets'),
-                      Text('7+ markets near you'),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Text(
+                          'Markets',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Text(
+                          '7+ markets near you',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
 
                       SizedBox(
                         height: 20,
                       ),
 
                       // ========== BUILD MARKET LIST HERE ==========
-                      _buildMarket(),
+                      _buildMarket('Brooklyn Fruit Valley', '09:00 - 21:00',
+                          '4.9', '2 km', 'images/market1.jpg'),
                       SizedBox(
                         height: 20,
                       ),
-                      _buildMarket(),
+                      _buildMarket('24/7 Fruit Market', '00:00 - 24:00', '4.9',
+                          '3 km', 'images/market2.jpg'),
                       SizedBox(
                         height: 20,
                       ),
-                      _buildMarket(),
+                      _buildMarket('Brooklyn Fruit Valley', '09:00 - 21:00',
+                          '4.9', '2 km', 'images/market1.jpg'),
                       SizedBox(
                         height: 20,
                       ),
-                      _buildMarket(),
+                      _buildMarket('24/7 Fruit Market', '00:00 - 24:00', '4.9',
+                          '3 km', 'images/market3.jpg'),
                     ],
                   ),
                 ],
@@ -126,19 +200,25 @@ class HomeScreen extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  _cartItem(),
+                  _cartItem('images/ci1.png', 'x2'),
                   SizedBox(
                     width: 10,
                   ),
-                  _cartItem(),
+                  _cartItem('images/ci2.png', 'x3'),
                   SizedBox(
                     width: 10,
                   ),
-                  _cartItem(),
+                  _cartItem('images/ci1.png', 'x2'),
                   Spacer(),
-                  Text('E49,54'),
+                  Text(
+                    'E49,54',
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                   SizedBox(
-                    width: 5,
+                    width: 3,
                   ),
                   Icon(Icons.keyboard_arrow_down)
                 ],
@@ -150,54 +230,80 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildFruitCard() {
+  Widget _buildFruitCard(String name, String price, String imgPath) {
     return Container(
       height: 250,
       width: 160,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.deepPurple,
+        color: Colors.orangeAccent[200],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Align(
             alignment: Alignment.center,
             child: Image(
               height: 150,
               width: 150,
-              image: AssetImage('images/fruit1.png'),
+              image: AssetImage(imgPath),
               fit: BoxFit.cover,
             ),
           ),
-          Text('Durian Mon\nTong'),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text('E19.99'),
-              Container(
-                height: 20,
-                width: 20,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
-                    ),
-                    borderRadius: BorderRadius.circular(10)),
-                child: Center(
-                  child: Icon(
-                    Icons.add,
-                    size: 16,
-                  ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 15,
+            ),
+            child: Text(
+              name,
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 15,
+              right: 15,
+              bottom: 15,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  price,
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w700),
                 ),
-              )
-            ],
+                Container(
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                      ),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                    child: Icon(
+                      Icons.add,
+                      size: 16,
+                    ),
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
     );
   }
 
-  Widget _buildMarket() {
+  Widget _buildMarket(String name, String time, String rating, String distance,
+      String imgPath) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Container(
@@ -210,41 +316,55 @@ class HomeScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
                   image: DecorationImage(
-                    image: AssetImage('images/market3.jpg'),
+                    image: AssetImage(imgPath),
                     fit: BoxFit.cover,
                   )),
             ),
             SizedBox(
               width: 20,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Brooklyn Fruit Valley'),
-                Text('09:00 - 21:00'),
-                Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.star,
-                      size: 10,
+            Padding(
+              padding: EdgeInsets.only(
+                top: 7,
+                bottom: 7,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    name,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
                     ),
-                    Text('4.9'),
-                    SizedBox(width: 10),
-                    Container(
-                      width: 1,
-                      height: 10,
-                      color: Colors.black,
-                    ),
-                    SizedBox(width: 10),
-                    Icon(
-                      Icons.location_on,
-                      size: 10,
-                    ),
-                    Text('2 km'),
-                  ],
-                )
-              ],
+                  ),
+                  Text(
+                    time,
+                    style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.star, size: 10, color: Colors.red),
+                      Text(
+                        rating,
+                        style: TextStyle(fontSize: 12, color: Colors.red),
+                      ),
+                      SizedBox(width: 10),
+                      Container(width: 1, height: 10, color: Colors.red),
+                      SizedBox(width: 10),
+                      Icon(Icons.location_on, size: 10, color: Colors.red),
+                      Text(
+                        distance,
+                        style: TextStyle(fontSize: 12, color: Colors.red),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
@@ -252,7 +372,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _cartItem() {
+  Widget _cartItem(String imgPath, String quantity) {
     return ClipOval(
       child: Container(
         height: 50,
@@ -263,7 +383,7 @@ class HomeScreen extends StatelessWidget {
             Image(
               height: 35,
               width: 35,
-              image: AssetImage('images/ci2.png'),
+              image: AssetImage(imgPath),
               fit: BoxFit.cover,
             ),
             Align(
@@ -273,7 +393,7 @@ class HomeScreen extends StatelessWidget {
                   right: 10,
                 ),
                 child: Text(
-                  'x2',
+                  quantity,
                   style: TextStyle(
                     fontSize: 11,
                   ),

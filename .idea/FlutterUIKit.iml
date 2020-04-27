@@ -9,6 +9,9 @@
       <excludeFolder url="file://$MODULE_DIR$/forecast_club/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/forecast_club/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/forecast_club/build" />
+      <excludeFolder url="file://$MODULE_DIR$/fruit_store/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/fruit_store/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/fruit_store/build" />
       <excludeFolder url="file://$MODULE_DIR$/game_streaming/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/game_streaming/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/game_streaming/build" />
