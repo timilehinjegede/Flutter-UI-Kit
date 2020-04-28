@@ -25,7 +25,7 @@ Don't forget to star⭐ the repo if you like what you see. 😉
 
 | Fruit Store | Fruit Store | Coming Soon | Coming Soon  | Coming Soon     |
 |    :---:     |     :---:      |     :---:     |     :--:     |     :--:     |
-| <img src="./fruit_store/screenshots/home1.png" width="400">   | <img src="./fruit_store/screenshots/detail1.png" width="400">     | <img src="./foreceast_club/screenshots/home0.png" width="400">    | <img src="./dukandear_app/screenshots/home0.png" width="400">       | <img src="./dukanedar_app/screenshots/detail0.png" width="400">     |
+| <img src="./fruit_store/screenshots/home0.png" width="400">   | <img src="./fruit_store/screenshots/detail0.png" width="400">     | <img src="./foreceast_club/screenshots/home0.png" width="400">    | <img src="./dukandear_app/screenshots/home0.png" width="400">       | <img src="./dukanedar_app/screenshots/detail0.png" width="400">     |
 
 
 # ✨ Requirements
