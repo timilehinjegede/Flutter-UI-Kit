@@ -29,7 +29,7 @@ class FruitDetailScreen extends StatelessWidget {
                   ],
                 ),
                 Image(
-                  height: MediaQuery.of(context).size.height * 0.35,
+                  height: MediaQuery.of(context).size.height * 0.33,
                   image: AssetImage('images/fruit1.png'),
                 ),
               ],

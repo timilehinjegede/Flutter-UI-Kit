@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               child: ListView(
+                padding: EdgeInsets.only(top:50,),
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
