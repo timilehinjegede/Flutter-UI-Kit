@@ -7,5 +7,5 @@ class AppColors{
   static final secondCardColor = Color(0XFFFFC599);
   static final thirdCardColor = Color(0XFFDAE69C);
   static final iconColors = Color(0XFFA87254);
-    
+  static final cartItemColor = Color(0XFFFFE35D);  
 }
