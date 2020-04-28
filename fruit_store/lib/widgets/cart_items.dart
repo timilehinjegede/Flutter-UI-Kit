@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitstore/utils/colors.dart';
 
 class CartItems extends StatelessWidget {
   @override
@@ -44,7 +45,7 @@ class CartItems extends StatelessWidget {
       child: Container(
         height: 50,
         width: 50,
-        color: Colors.white,
+        color: AppColors.cartItemColor.withOpacity(1),
         child: Column(
           children: <Widget>[
             Image(
