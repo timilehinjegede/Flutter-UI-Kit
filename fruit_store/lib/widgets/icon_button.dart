@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitstore/utils/colors.dart';
 
 class MyIconButton extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class MyIconButton extends StatelessWidget {
       height: 40,
       width: 40,
       decoration: BoxDecoration(
-        color: Colors.orange[300],
+        color: AppColors.bkColor,
         borderRadius: BorderRadius.circular(10),
       ),
       padding: EdgeInsets.only(left: 10, right: 10),

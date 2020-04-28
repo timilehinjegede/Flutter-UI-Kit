@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:fruitstore/screens/fruit_detail.dart';
+import 'package:fruitstore/utils/colors.dart';
+import 'package:fruitstore/widgets/cart_items.dart';
+import 'package:fruitstore/widgets/icon_button.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[300],
+      backgroundColor: AppColors.bkColor,
       body: Column(
         children: <Widget>[
           // ========== BUILD THE MAIN CONTENT OF THE SCREEN ==========
@@ -54,43 +57,7 @@ class HomeScreen extends StatelessWidget {
                             ),
 
                             // ========== BUILD ICON BUTTON ==========
-                            Container(
-                              height: 40,
-                              width: 40,
-                              decoration: BoxDecoration(
-                                color: Colors.orange[300],
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              padding: EdgeInsets.only(left: 10, right: 10),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  // ===== BUILD ICON BUTTON =====
-                                  Container(
-                                    height: 2,
-                                    width: 20,
-                                    color: Colors.black38,
-                                  ),
-                                  SizedBox(
-                                    height: 3,
-                                  ),
-                                  Container(
-                                    height: 2,
-                                    width: 15,
-                                    color: Colors.black38,
-                                  ),
-                                  SizedBox(
-                                    height: 3,
-                                  ),
-                                  Container(
-                                    height: 2,
-                                    width: 20,
-                                    color: Colors.black38,
-                                  ),
-                                ],
-                              ),
-                            )
+                            MyIconButton(),
                           ],
                         ),
                       ),
@@ -119,15 +86,22 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 );
                               },
-                              child: _buildFruitCard('Durian Mon\nTong',
-                                  'E19.99', 'images/fruit1.png'),
+                              child: _buildFruitCard(
+                                  'Durian Mon\nTong',
+                                  'E19.99',
+                                  'images/fruit1.png',
+                                  AppColors.firstCardColor),
                             ),
                             SizedBox(width: 20),
-                            _buildFruitCard('Hawaiian\nPapaya', 'E4.55',
-                                'images/fruit2.png'),
+                            _buildFruitCard(
+                              'Hawaiian\nPapaya',
+                              'E4.55',
+                              'images/fruit2.png',
+                              AppColors.secondCardColor,
+                            ),
                             SizedBox(width: 20),
                             _buildFruitCard('Durian Mon\nTong', 'E19.99',
-                                'images/fruit1.png'),
+                                'images/fruit1.png', AppColors.thirdCardColor),
                           ],
                         ),
                       ),
@@ -191,52 +165,20 @@ class HomeScreen extends StatelessWidget {
           ),
 
           // ========== BUILD THE CART ITEMS INDICATOR ==========
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 20,
-            ),
-            child: Container(
-              height: 80,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  _cartItem('images/ci1.png', 'x2'),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  _cartItem('images/ci2.png', 'x3'),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  _cartItem('images/ci1.png', 'x2'),
-                  Spacer(),
-                  Text(
-                    'E49,54',
-                    style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 3,
-                  ),
-                  Icon(Icons.keyboard_arrow_down)
-                ],
-              ),
-            ),
-          ),
+          CartItems(),
         ],
       ),
     );
   }
 
-  Widget _buildFruitCard(String name, String price, String imgPath) {
+  Widget _buildFruitCard(
+      String name, String price, String imgPath, Color color) {
     return Container(
       height: 250,
       width: 160,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.orangeAccent[200],
+        color: color,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -348,58 +290,28 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.star, size: 10, color: Colors.red),
+                      Icon(Icons.star, size: 10, color: AppColors.iconColors),
                       Text(
                         rating,
-                        style: TextStyle(fontSize: 12, color: Colors.red),
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.iconColors),
                       ),
                       SizedBox(width: 10),
-                      Container(width: 1, height: 10, color: Colors.red),
+                      Container(
+                          width: 1, height: 10, color: AppColors.iconColors),
                       SizedBox(width: 10),
-                      Icon(Icons.location_on, size: 10, color: Colors.red),
+                      Icon(Icons.location_on,
+                          size: 10, color: AppColors.iconColors),
                       Text(
                         distance,
-                        style: TextStyle(fontSize: 12, color: Colors.red),
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.iconColors),
                       ),
                     ],
                   )
                 ],
               ),
             )
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _cartItem(String imgPath, String quantity) {
-    return ClipOval(
-      child: Container(
-        height: 50,
-        width: 50,
-        color: Colors.white,
-        child: Column(
-          children: <Widget>[
-            Image(
-              height: 35,
-              width: 35,
-              image: AssetImage(imgPath),
-              fit: BoxFit.cover,
-            ),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  right: 10,
-                ),
-                child: Text(
-                  quantity,
-                  style: TextStyle(
-                    fontSize: 11,
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),
