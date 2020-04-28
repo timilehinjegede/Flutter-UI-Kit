@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fruitstore/utils/colors.dart';
+import 'package:fruitstore/widgets/dot_indicator.dart';
 
 class FruitDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[200],
+      backgroundColor: AppColors.firstCardColor,
       body: Column(
         children: <Widget>[
           // ========== BUILD FRUIT IMAGE HERE ==========
@@ -83,7 +85,9 @@ class FruitDetailScreen extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     // ===== BUILD DOTS =====
-                    _buildDots(),
+                    DotIndicator(),
+
+                    // BUILD FRUIT PRICE
                     Text(
                       'E49,54',
                       style: TextStyle(
@@ -152,10 +156,11 @@ class FruitDetailScreen extends StatelessWidget {
                     Expanded(
                       child: Container(
                         padding: EdgeInsets.symmetric(horizontal: 20),
-                        height: 55,
+                        height: 60,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.yellow[400]),
+                          borderRadius: BorderRadius.circular(10),
+                          color: AppColors.bkColor,
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
@@ -187,8 +192,8 @@ class FruitDetailScreen extends StatelessWidget {
                     ),
                     SizedBox(width: 20),
                     Container(
-                      width: 55,
-                      height: 55,
+                      width: 60,
+                      height: 60,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
@@ -206,96 +211,6 @@ class FruitDetailScreen extends StatelessWidget {
                 )
               ],
             ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildDots() {
-    return Expanded(
-      child: Row(
-        children: <Widget>[
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          // BIG CIRCLE
-          Container(
-            height: 22,
-            width: 22,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(11),
-              color: Colors.yellow,
-            ),
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Container(
-            height: 2.5,
-            width: 2.5,
-            color: Colors.grey,
           ),
         ],
       ),
