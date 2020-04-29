@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:winestore/screens/wine_detail.dart';
 import 'package:winestore/styles/colors.dart';
 import 'package:winestore/styles/text_style.dart';
 import 'package:winestore/utils/images.dart';
@@ -31,27 +32,38 @@ class AllWineScreen extends StatelessWidget {
                       ),
                       Align(
                         alignment: Alignment.bottomCenter,
-                        child: Container(
-                          height: 180,
-                          width: screenWidth(context),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: AppColors.kPink,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Vicente Gandia\nNebla Roble'),
-                              Text('Italy 13.5%'),
-                              Container(
-                                height: 60,
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.kWhite,
-                                ),
-                              )
-                            ],
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    WineDetailScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            height: 180,
+                            width: screenWidth(context),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: AppColors.kPink,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text('Vicente Gandia\nNebla Roble'),
+                                Text('Italy 13.5%'),
+                                Container(
+                                  height: 60,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: AppColors.kWhite,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
