@@ -21,6 +21,9 @@
       <excludeFolder url="file://$MODULE_DIR$/travel_service/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/travel_service/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/travel_service/build" />
+      <excludeFolder url="file://$MODULE_DIR$/wine_store/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/wine_store/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/wine_store/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
